@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chiku – I'm Lost, Please Call My Family</title>
+<style>
+  :root { --bg:#fff8f0; --card:#ffffff; --text:#2b2118; --accent:#e8590c; --muted:#7a6a5c; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#1a1511; --card:#262019; --text:#f5ece2; --accent:#ff8a3d; --muted:#b9a99a; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         background:var(--bg); color:var(--text); display:flex; justify-content:center; padding:20px; }
+  .card { background:var(--card); max-width:420px; width:100%; border-radius:20px; padding:24px;
+          box-shadow:0 4px 20px rgba(0,0,0,.12); text-align:center; }
+  .photo { width:200px; height:200px; border-radius:50%; object-fit:cover; border:5px solid var(--accent);
+           background:#ddd; margin:0 auto 12px; display:block; }
+  h1 { margin:8px 0 4px; font-size:2rem; }
+  .sub { color:var(--muted); margin:0 0 16px; }
+  .alert { background:var(--accent); color:#fff; padding:10px; border-radius:12px; font-weight:600; margin-bottom:16px; }
+  .btn { display:block; padding:14px; margin:10px 0; border-radius:12px; text-decoration:none;
+         font-weight:700; font-size:1.1rem; background:var(--accent); color:#fff; }
+  .btn.alt { background:transparent; color:var(--accent); border:2px solid var(--accent); }
+  .wide { width:100%; border-radius:14px; margin-top:8px; }
+  .info { text-align:left; margin-top:18px; border-top:1px solid rgba(128,128,128,.3); padding-top:14px; }
+  .info p { margin:6px 0; }
+  .info b { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="card">
+  <img class="photo" src="chiku.jpg" alt="Chiku the Shih Tzu" onerror="this.style.display='none'">
+  <h1>Hi, I'm Chiku 🐶</h1>
+  <p class="sub">Shih Tzu · 3 years old</p>
+  <div class="alert">If you found me, please call my family!</div>
+
+  <a class="btn" href="tel:+917042203782">📞 Call 7042203782</a>
+  <a class="btn alt" href="tel:+919717114735">📞 Call 9717114735</a>
+  <a class="btn alt" href="tel:+6387743566">📞 Call 6387743566</a>
+  <a class="btn alt" href="https://wa.me/917042203782?text=Hi%2C%20I%20found%20Chiku!">💬 WhatsApp</a>
+
+  <img class="wide" src="chiku2.jpg" alt="Chiku" onerror="this.style.display='none'">
+
+  <div class="info">
+    <p><b>Name:</b> Chiku</p>
+    <p><b>Breed:</b> Shih Tzu</p>
+    <p><b>Age:</b> 3 years </p>
+  </div>
+</div>
+</body>
+</html>
